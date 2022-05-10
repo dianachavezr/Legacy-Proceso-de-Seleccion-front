@@ -1,0 +1,54 @@
+.table-container { 
+  display: flex; 
+  flex-direction: column;
+  margin: 0px 0px 9em 0;
+   justify-content: center; 
+   align-items: center; }
+
+ .Create_TEST{
+   width: 50vw;
+  margin: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+ }  
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.FormTechTest {
+  padding: 8em 9em 0px 20em;
+  height: fit-content;
+  border-radius: 2em;
+}
+.Create_Form_Test{
+background-color: white;
+    padding: 2em;
+    border-radius: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.Pdf_Container, .Test_Container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 991px) {
+.FormTechTest {
+  padding: 10em 3em 0 3em;
+  height: fit-content;
+  border-radius: 2em;
+}
+.table-container { 
+  display: flex; 
+  flex-direction: column;
+  margin: 0px 0px 0 20px;
+}
+}

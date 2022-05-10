@@ -1,0 +1,52 @@
+.qualification {
+  
+    overflow: auto;
+}
+
+.Button_qualification{
+  display: flex;
+  justify-content: center;
+}
+.section__qualification {
+  overflow: auto;
+  background-color: white;
+  margin: 7em 5em 5em 10em;
+  padding: 2em;
+  width: 82vw;
+  border-radius: 2em;
+  box-shadow: 0px -1px 8px 0px black;
+}
+
+
+.good{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  color: #fff;
+}
+
+.bad{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .section__qualification {
+    
+    margin: 7em 1em 0 2em;
+
+    width: 85vw;
+
+  }
+
+}
+
+

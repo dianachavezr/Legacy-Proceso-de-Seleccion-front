@@ -1,0 +1,86 @@
+
+.calendar-screen{
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  @media screen and (max-width: 440px) {
+  height: 70vh !important;
+  }
+}
+
+.rbc-calendar {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f5f7;
+}
+
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.transition {
+  transition: .4s all !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.ripple:hover {
+  background-image: radial-gradient(circle, transparent 1%, #fac906 1%);
+  background-position: center;
+  background-size: 15000%;
+}
+
+.ripple:active {
+  transition: background 0s;
+  background-color: #caa10c;
+  background-size: 100%;
+}
+
+.upperCase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: 700;
+}
+.bold-500{
+  font-weight: 500;
+}
+.ligth{
+  font-weight: 400;
+}
+.subtitle {
+  position: relative;
+  bottom: 1px;
+  font-size: 9px;
+  margin: 0 15px 0 10px;
+}
+.text-crumbs{
+  font-size: 14px;
+}
+
+.swal2-styled.swal2-confirm{
+  background-color: #fdc300 !important;
+}
+.swal2-styled.swal2-confirm:focus {
+  box-shadow: 0 0 0 3px #ffc500 !important;
+}
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+  box-shadow: 0 0 0 0.25rem #ebb30b !important;
+}

@@ -1,0 +1,28 @@
+.cardTitleBox{
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0);
+    background-color: #FFCC02;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1vw;
+}
+
+.cardContentBox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1vw;
+}
+
+.convocatoryListFlex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.convocatoryCardUl{
+    list-style: none;
+}

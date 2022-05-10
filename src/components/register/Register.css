@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background: #ffcc02;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 31px;
+  margin-top: 8em;
+}
+
+.admin{
+  height: 92.7vh;
+}
+
+.form h1 {
+  text-align: center;
+}
+.fail {
+  border: 2px solid #f00 !important;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Logo__Programate{
+    display: flex;
+    height: 7vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.form .buttonS {
+  background-color: #000;
+  color: #ffcc02;
+  width: 80px;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.form input {
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+a {
+  color: #111;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 480px){
+  .container {
+  font-size: 15px;
+}
+}

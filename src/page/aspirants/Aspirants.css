@@ -1,0 +1,19 @@
+.spirants {
+  width: 100%;
+  max-width: 1800px;
+  padding: 97px 56px 76px 93px;
+  height: 785px;
+}
+.spirants__content{
+  display: flex;
+  justify-content: center;
+
+}
+.mt-4{
+  margin-left: 4em;
+}
+@media screen and (min-width: 1400px) {
+  .spirants {
+    height: 100vh;
+  }
+}

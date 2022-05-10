@@ -1,0 +1,38 @@
+
+
+.nav__item {
+  padding: 10px 0 10px 0;
+  margin: 10px 0 5px 0;
+}
+
+.nav__item-icon{
+    font-size: 25px;
+    color: #000000;
+    transition: 0.4s all;
+    width: 40px;
+    text-align: center;
+  }
+  .nav__item-iconArrow {
+    padding: 0 10px 0 0;
+    display: none;
+  }
+  .nav__item-icon :hover ,
+  .nav__item-iconArrow :hover {
+    color: white !important;
+    transition: 0.4s all !important;
+  }
+  .nav__subitem {
+    padding: 0 0 0 60px;
+  }
+  .nav__subitem-label {
+    color: black;
+    margin: 8px 0;
+    font-weight: 600;
+    font-size: 14.8px;
+  }
+ 
+  .active{
+  color: rgb(255, 255, 255) !important;
+  transition: 0.4s all;
+
+}

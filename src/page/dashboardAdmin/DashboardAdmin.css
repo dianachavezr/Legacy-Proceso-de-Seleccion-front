@@ -1,0 +1,100 @@
+.section__dash {
+  width: 100%;
+  max-width: 1800px;
+  padding: 88px 25px;
+}
+.section__content{
+  display: flex;
+  justify-content: center;
+  margin-left: 70px;
+}
+
+.graphcsAdmin {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 8vh;
+  justify-content: space-evenly;
+}
+
+.cohorteGoal__container,
+.funnel__container {
+  width: 400px;
+  height: 340px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px #0000004f !important;
+          box-shadow: 0px 2px 4px #0000004f !important;
+}
+
+.socialMedia__container {
+  width: 400px;
+  height: 340px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px #0000004f !important;
+          box-shadow: 0px 2px 4px #0000004f !important;
+}
+.socialMedia__container-title{
+  display: flex;
+  justify-content: center;
+}
+
+.cohorteGoal__container-title,
+.socialMedia__container-title,
+.migrants__container,
+.funnel__container-title {
+  width: 100%;
+  height: 80px;
+  background-color: #ffcc02;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cohorteGoal__container-graph,
+.socialMedia__container-graph,
+.migrants__container,
+.funnel__container-graph {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.migrants__container {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px #0000004f !important;
+          box-shadow: 0px 2px 4px #0000004f !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 991px) {
+ 
+  
+  .graphcsAdmin {
+   padding-left: 0;
+  }
+  
+
+  .section__content {
+  margin: 0;
+}
+.Dashboard-title{
+  font-size: 32px;
+}
+}
+
+@media screen and (max-width: 530px)
+{.Dashboard-title {
+    font-size: 26px;
+}}

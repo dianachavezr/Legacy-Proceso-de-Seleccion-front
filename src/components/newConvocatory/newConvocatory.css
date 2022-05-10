@@ -1,0 +1,118 @@
+
+.Convocatory_Form {
+    width: 84vw;
+    padding: 3vw;
+    margin: 0px 7px 37px 150px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px -1px 8px 0px black;
+}
+.Convocatory_Form_container{
+    margin-top: 3em;   
+}
+
+.convocatory-data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 18px;
+    margin-bottom: 4rem;
+}
+.containerButton{
+    display: flex;
+    justify-content:center;
+    padding: 1em;
+   
+}
+
+.convocatory-data div{
+    display: flex;
+    flex-direction: column;
+}
+
+.convocatory-data div span{
+    color: red;
+    margin-bottom: 1rem;
+    margin-top: none;
+}
+
+.convocatory-data div label{
+    width: 14rem;
+}
+
+.convocatory-data div input{
+    width: 14rem;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 1rem 0;
+    background: #fff;
+
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+}
+
+
+
+.containerFirstView{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.containerP{
+    text-align: center;
+    font-size: 30px;
+}
+
+.containerButton{
+    display: flex;
+    justify-content:center;
+    padding: 1em;
+   
+}
+
+.select {
+    margin: 9px 0px 9px 0px;
+    box-shadow: 0px 0px 4px 0px black;
+    border-radius: 5px;
+}
+@media screen and (max-width: 991px) {
+    .Convocatory_Form_container{
+        margin-top: 5em;
+    }
+    .Convocatory_Form {
+        margin: 0 39px 45px 38px;
+      
+    }
+    .convocatory-data{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 18px;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .Convocatory_Form {
+        margin: 0 39px 45px 20px;
+    
+    }
+    .convocatory-data{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 18px;
+        margin-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    .Convocatory_Form {
+    margin: 0 19px 45px 19px;
+}}

@@ -1,0 +1,44 @@
+.User_list {
+    width: 45vw;
+    display: flex;
+    background: white;
+    margin: 7em 2em 0 6em;
+    padding: 2em;
+    border-radius: 2em;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.User_Container {
+    padding: 1em 1em 1em 6em;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+
+.Search_boxUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1vw;
+}
+
+
+
+
+@media screen and (max-width: 991px) {
+    .User_list {
+        margin: 7em 0 0 0;
+    }
+    .User_Container{
+     padding: 0;
+    }
+
+    .table_user {
+        width: 76vw;
+
+    }
+}

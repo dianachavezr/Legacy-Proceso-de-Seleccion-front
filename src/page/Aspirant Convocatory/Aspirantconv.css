@@ -1,0 +1,41 @@
+.Aspirantconv_container {
+    display: flex;
+    flex-direction: column;
+    margin: 95px 0px 44px 39px;
+    background-color: #fff;
+    border: outset;
+    padding: 3vw;
+    width: 40vw;
+    border-radius: 2vw;
+}
+
+.Aspirantconv_Button{
+    border-radius: 1em;
+    padding-top: 1em;
+}
+
+.AspirantConv_Box{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.convocatoryCard{
+    text-align: center;
+}
+
+.convocatoryCardTitle{
+    background-color: #FFCC02;
+    padding: 1em 0 1em 0;
+}
+
+.convocatoryCardBody{
+    padding: 2vw;
+}
+
+.convocatoryCardsUl{
+    list-style: none;
+}

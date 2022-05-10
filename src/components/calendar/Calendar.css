@@ -1,0 +1,143 @@
+/* Modal */
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(245, 241, 241, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white !important;
+    border-radius: 5px !important;
+    color: rgb(51, 51, 51) !important;
+    display: inline !important;
+    max-height: 550px !important;
+    max-width: 500px !important;
+    outline: none !important;
+    padding: 10px !important;
+    box-shadow: 0px 2px 4px #0000004f !important;
+}
+
+.react-datetime-picker input:focus{
+    outline: none !important;
+}
+.react-datetime-picker__wrapper{
+    border: 0px solid gray !important;
+}
+.btn-block{
+    display: block;
+    width: 100%;
+}
+
+.add-event{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 22px;
+    border: none;
+    z-index: 100;
+}
+.fab-danger{
+    position: fixed;
+    left: 120px;
+    bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    z-index: 100;
+}
+.rbc-toolbar .rbc-toolbar-label {
+    font-size: 22px !important;
+    font-weight: 400;
+    text-transform: capitalize !important;
+}
+
+.info-aspirant{
+    height: 80%;
+}
+.text-date{
+    font-size: 20px;
+}
+.rbc-btn-group > button:last-child:not(:first-child) {
+    background-color: #fdc300 !important;
+    border: none !important;
+    color: #ffff !important;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    transition: .4s all !important;
+
+}
+.rbc-btn-group > button:not(:first-child):not(:last-child) {
+    background-color: #fdc300 !important;
+    border: none !important;
+    color: #ffff !important;
+    border-radius: 0;
+    transition: .4s all !important;
+
+}
+.rbc-btn-group > button:first-child:not(:last-child) {
+    background-color: #fdc300 !important;
+    border: none !important;
+    color: #ffff !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: .4s all !important;
+
+}
+
+
+.rbc-toolbar button:active, .rbc-toolbar button.rbc-active {
+    box-shadow: inset 20px -13px 20px 20px rgba(0, 0, 0, 0.1);
+    background-color: #e6e6e6 !important;
+    border-color: #adadad !important;
+    transition: .4s all !important;
+}
+@media screen and (max-width: 638px) {
+    .rbc-btn-group > button:first-child:not(:last-child) {
+        font-size: 12px !important;
+    }
+    .rbc-btn-group > button:not(:first-child):not(:last-child) {
+        font-size: 12px !important;
+    }
+    .rbc-btn-group > button:last-child:not(:first-child) {
+        font-size: 12px !important;
+    }
+    
+    .rbc-toolbar .rbc-toolbar-label {
+        font-size: 20px !important;
+    }
+    .rbc-btn-group > button:first-child:not(:last-child) {
+        font-size: 12px !important;
+    }
+    
+    .rbc-toolbar {
+        font-size: 12px !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+}
+

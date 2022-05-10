@@ -1,0 +1,117 @@
+
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: #fdc300 !important;
+  border: none !important;
+}
+.error{
+  color: red;
+}
+
+.MuiSvgIcon-root {
+  font-size: 2.5rem !important;
+}
+
+.MuiStepIcon-text {
+  fill: black !important;
+}
+
+.MuiStepLabel-root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MuiStepIcon-root {
+  color: #ffffff !important;
+  border: 2px solid #fdc300 !important;
+  border-radius: 50% !important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: #fdc300 !important;
+  border: none !important;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #fdc300 !important;
+  position: absolute !important;
+  right: 40px !important;
+}
+
+.makeStyles-root-1,
+.makeStyles-root-4,
+.makeStyles-root-7,
+.makeStyles-root-10,
+.makeStyles-root-16,
+.makeStyles-root-19,
+.makeStyles-root-22,
+.makeStyles-root-13 {
+  background-color: white !important;
+  background: white !important;
+  padding: 20px !important;
+  -webkit-box-shadow: 0px 2px 4px #0000004f !important;
+          box-shadow: 0px 2px 4px #0000004f !important;
+}
+
+.jss1,
+.jss4,
+.jss7,
+.jss10,
+.jss13,
+.jss16,
+.jss19,
+.jss22,
+.jss25 {
+  background-color: white !important;
+  background: white !important;
+  width: 100%;
+  padding: 20px !important;
+  -webkit-box-shadow: 0px 2px 4px #0000004f !important;
+          box-shadow: 0px 2px 4px #0000004f !important;
+}
+
+.send-data {
+  color: white !important;
+  position: absolute !important;
+  margin-top: 10px !important;
+  right: 45px !important;
+  z-index: 1000 !important;
+  width: 70px !important;
+  height: 45px !important;
+  background-color: #fdc300 !important;
+  border: none !important;
+}
+
+.MuiStepLabel-label.MuiStepLabel-active {
+  font-family: "Gilroy" !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+}
+
+.MuiStepLabel-label {
+  font-family: "Gilroy" !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+
+.form-label {
+  margin: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  font-weight: 600 !important;
+  width: 100% !important;
+}
+
+

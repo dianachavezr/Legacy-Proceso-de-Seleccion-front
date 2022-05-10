@@ -1,0 +1,11 @@
+.WaitingList {
+    width: 100%;
+    max-width: 1800px;
+    padding: 88px 25px;
+    height: 788px;
+    margin-left: 6vw;
+}
+.WaitingList__Content{
+    display: flex;
+    justify-content: space-between;
+}

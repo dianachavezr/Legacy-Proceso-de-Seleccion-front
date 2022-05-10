@@ -1,0 +1,6 @@
+@media (max-width: 700px) {
+    .graph > Doughnut {
+        width: 100px !important;
+        height: 200px;
+    }
+}

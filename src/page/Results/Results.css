@@ -1,0 +1,11 @@
+.Aspirants {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 3vw;
+    padding: 57px 0px 0px 16px
+}
+.MuiTableCell-alignRight {
+    text-align: center;
+    flex-direction: row-reverse;
+}

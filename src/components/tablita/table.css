@@ -1,0 +1,27 @@
+.trash-btn{
+  border: none;
+  background: none;
+}
+
+.trash{
+  color: red;
+  font-size: 18px;
+  border: none;
+  background: none;
+}
+
+.eye{
+  color: blue;
+  font-size: 18px;
+}
+
+.edit{
+  color: green;
+  font-size: 18px;
+}
+
+.actions{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
