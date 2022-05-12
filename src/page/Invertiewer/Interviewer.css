@@ -1,0 +1,14 @@
+.interviewerDashboardContainer{
+   
+    height: 95vh;
+    width: 90vw;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.interviewrDashboardTitle{
+    font-size: 4rem;
+}

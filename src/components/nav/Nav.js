@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { ITEMS, ITEMS_ASPIRANTS } from "../../api/data";
+import { ITEMS, ITEMS_ASPIRANTS,  ITEMS_INTERVIEWER } from "../../api/data";
 import Item from "../item/Item";
 import "./Nav.css";
 import { Link } from "react-router-dom";
@@ -10,7 +10,7 @@ const Nav = () => {
 
 
   const auth = useSelector(state => state.auth)
-  const {isLogged, isAdmin} = auth
+  const {isLogged, isAdmin, isModerator, isInterviewer, isViewer} = auth
 
   const toggleItem = (id) => {
     if (activeItems.find((active) => active === id)) {
@@ -28,6 +28,7 @@ const Nav = () => {
 
   const isActive = ITEMS.findIndex(item => item.pathname === location.pathname)
   const isActiveAspirant = ITEMS_ASPIRANTS.findIndex(item => item.pathname === location.pathname)
+  const isInterviewer1 = ITEMS_INTERVIEWER.findIndex(item => item.pathname === location.pathname)
   return (  
   <> 
   
@@ -41,7 +42,7 @@ const Nav = () => {
       <span className="nav__title">Menu</span>
       <div className="nav__items mt-2">
         <nav className="nav__fixed">
-          {isAdmin &&
+          {isAdmin && !isModerator && !isInterviewer && !isViewer &&
             isLogged &&
             ITEMS.map((item, index) => (
               <Item
@@ -53,7 +54,7 @@ const Nav = () => {
               />
             ))}
 
-          {!isAdmin &&
+          {!isAdmin && !isModerator && !isInterviewer && !isViewer &&
             isLogged &&
             ITEMS_ASPIRANTS.map((item, index) => (
               <Item
@@ -62,6 +63,18 @@ const Nav = () => {
                 toggleItem={() => toggleItem(item.id)}
                 activeItems={activeItems}
                 active={index === isActiveAspirant} 
+              />
+            ))}
+
+          {isInterviewer && !isAdmin && !isModerator &&  !isViewer &&
+            isLogged &&
+            ITEMS_INTERVIEWER.map((item, index) => (
+              <Item
+                key={index}
+                item={item}
+                toggleItem={() => toggleItem(item.id)}
+                activeItems={activeItems}
+                active={index === isInterviewer1} 
               />
             ))}
             <div>

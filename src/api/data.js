@@ -61,6 +61,7 @@ export const ITEMS = [
         name: "Prueba Tecnica",
         pathname: "/calificacion-prueba-tecnica",
       },
+  
     ],
   },
 ];
@@ -94,6 +95,68 @@ export const ITEMS_ASPIRANTS = [
     pathname: "/aspirante",
     id: 12,
   },
+  {
+    name: "Entrevistador",
+    icon: "fas fa-star",
+    
+    id: 13,
+    items: [
+      {
+        name: "Inicio Entrevistador",
+        pathname: "/entrevistadordashboard",
+      },
+      {
+        name: "Aspirante Citados",
+        pathname: "/entrevistadoraplicantescitados",
+      },     
+    ],
+  },
+
+  {
+    name: "Observador",
+    icon: "far fa-smile",
+    id: 14,
+    items: [
+      {
+        name: "Inicio Observador",
+        pathname: "/observadordashboard",
+
+      },
+    ],
+  },
+  {
+    name: "Moderador",
+    icon: "fas fa-user-edit",
+    id: 15,
+    items: [
+      {
+        name: "Inicio Moderador",
+        pathname: "/moderadordashboard",
+      },
+      {
+        name: "Crear entrevistas y assesments",
+        pathname: "/moderadorcrearentrevistayassesment",
+      },
+      {
+        name: "Tabla Entrevistas",
+        pathname: "/moderadortablaentrevistas",
+      },
+      {
+        name: "Entrevistadores",
+        pathname: "/moderadorentrevistadores",
+      },
+      {
+        name: "Observadores",
+        pathname: "/moderadorobservadores",
+      },
+      {
+        name: "Aspirantes citados",
+        pathname: "/moderadoraspirantescitados",
+      },              
+    ],
+  },
+
+
 ];
 
 export const CONVOCATORY = [
@@ -149,4 +212,23 @@ export const CONVOCATORY = [
     test: {},
     status: true,
   },
+];
+
+
+export const ITEMS_INTERVIEWER = [
+  {
+    name: "Dashboard Entrevistador",
+    icon: "fas fa-th-large",
+    items: [],
+    pathname: "/dashboard",
+    id: 13,
+  },
+  {
+    name: "Entrevista",
+    icon: "fa fa-bullhorn",
+    items: [],
+    pathname: "/entrevistadordashboard",
+    id: 14,
+  },
+ 
 ];

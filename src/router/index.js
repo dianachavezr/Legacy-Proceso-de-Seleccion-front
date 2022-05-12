@@ -40,6 +40,17 @@ import QualifyInterview from "../page/Qualification/QualifyInterview";
 import ConvocatoryAspirants from "../page/convocatory/ConvocaryAspirants";
 import NavBarIndex from "../components/navBarIndex/NavBarIndex";
 import Index from "../components/stepForm";
+import Interviewer from "../page/Invertiewer/InterviewerDashboard";
+import InterviewerDashboard from "../page/Invertiewer/InterviewerDashboard";
+import InterviewerApplicantsCited from "../page/Invertiewer/InterviewerApplicantsCited";
+import ViewerDashboard from "../page/Viewer/ViewerDashboard";
+import ModeratorDashboard from "../page/Moderator/ModeratorDashboard_ApplicantsCited/ModeratorDashboard"
+import ModeratorCreateInterview from "../page/Moderator/ModeratorCreateInterview/ModeratorCreateInterview"
+import ModeratorInterviewer from "../page/Moderator/ModeratorInterviewer_Viewer/ModeratorInterviewer"
+import ModeratorViewer from "../page/Moderator/ModeratorInterviewer_Viewer/ModeratorViewer"
+import ModeratorApplicantsCited from "../page/Moderator/ModeratorDashboard_ApplicantsCited/ModeratorApplicantsCited"
+import ModeratorInterviewTable from "../page/Moderator/ModeratorCreateInterview/ModeratorInterviewTable";
+
 
 
 
@@ -52,7 +63,8 @@ const App = () => {
     dispatch(getData(auth.user._id));
   }, [dispatch, auth]);
 
-  const { isLogged, isAdmin } = auth;
+  const { isLogged, isAdmin, isModerator, isInterviewer, isViewer } = auth;
+
   const { pathname } = useLocation();
 
   return (
@@ -73,7 +85,8 @@ const App = () => {
           
 
           {/* <Redirect to="/login" /> */}
-          {isLogged && isAdmin && (
+          {isAdmin && !isModerator && !isInterviewer && !isViewer &&
+            isLogged &&(
             <>
               <Route path="/dashboard" component={DashboardAdmin} />
               <Route path="/users" component={ListOfUsers}/>
@@ -105,9 +118,11 @@ const App = () => {
 
               <Route path="/parameterization" component={Parameterization} />
               <Route path="/selection-results" component={SelectionResults} />
+              
             </>
           )}
-          {!isAdmin && isLogged && (
+          {!isAdmin && !isModerator && !isInterviewer && !isViewer &&
+            isLogged && (
             <>
 
               <Route exact path="/inscripcion" component={Index} />
@@ -117,9 +132,30 @@ const App = () => {
               <Route exact path="/Convocatoriasaspirante" component={AspirantConvocatorys}/>
               <Route exact path="/aspirante" component={ProofAspirant} />
               <Route exact path="/dashboard" component={DashboardAspirant} />
+
+              <Route path="/entrevistadordashboard" component={InterviewerDashboard} />
+              <Route path="/entrevistadoraplicantescitados" component={InterviewerApplicantsCited} />
+
+              <Route path="/observadordashboard" component={ViewerDashboard} />
+
+              <Route path="/moderadordashboard" component={ModeratorDashboard} />
+              <Route path="/moderadorcrearentrevistayassesment" component={ModeratorCreateInterview} />
+              <Route path="/moderadortablaentrevistas" component={ModeratorInterviewTable} />
+              <Route path="/moderadorentrevistadores" component={ModeratorInterviewer} />
+              <Route path="/moderadorobservadores" component={ModeratorViewer} />
+              <Route path="/moderadoraspirantescitados" component={ModeratorApplicantsCited} />
               <WhatsAppButton/>
             </>
           )}
+
+            {isInterviewer && !isAdmin && !isModerator && !isViewer &&
+            isLogged &&(
+            <>
+              <Route path="/entrevistadordashboard" component={Interviewer} />
+            </>
+          )}
+         
+         
         </Switch>
       {pathname !== '/verify' && <Footer />}
     </>
